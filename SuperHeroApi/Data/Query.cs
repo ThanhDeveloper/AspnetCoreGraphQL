@@ -9,5 +9,7 @@ namespace SuperHeroApi.Data
         [UseSorting]
         public IQueryable<Superhero> GetSuperheroes([Service] ApplicationDbContext context) =>
             context.Superheroes;
+        public IQueryable<Movie> GetMovies([Service] ApplicationDbContext context) =>
+            context.Movies;
     }
 }
